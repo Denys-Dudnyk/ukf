@@ -1,0 +1,72 @@
+.banner {
+	background-image: url('../../../../../public/top-decor.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 140px;
+	// margin-left: 20px;
+	// margin-right: 20px;
+	@media (max-width: 768px) {
+		@apply items-center   fixed  mt-9 top-0 left-0 w-full;
+		height: 160px;
+	}
+	.bannerContainer {
+		// margin-left: 20px;
+		// margin-right: 20px;
+		margin: 0 auto;
+		width: 924px;
+		@media (max-width: 768px) {
+			width: 100%;
+			margin-top: 0px;
+		}
+
+		margin-top: 52px;
+
+		.logoAis {
+			width: 130px;
+			height: 66px;
+			margin: auto;
+			margin-top: 40px;
+			float: left;
+			background-image: url('../../../../../public/AiS2_logo.png');
+			@media (max-width: 768px) {
+				align-items: center;
+				// @apply mx-auto;
+				margin-top: 20px;
+				scale: 60%;
+				float: none;
+			}
+		}
+
+		.mobileText {
+			display: none;
+			@media (max-width: 768px) {
+				align-items: center;
+				// @apply mx-auto;
+				// margin-top: 45px;
+				// scale: 60%;
+				// float: none;
+				display: flex;
+				justify-content: center;
+			}
+
+			> div {
+				@media (max-width: 768px) {
+					width: 20rem;
+					font-size: 130%;
+					font-weight: bold;
+					color: #002f68;
+					margin-top: -3px;
+					text-align: center;
+				}
+			}
+		}
+		.ukf {
+			@media (max-width: 768px) {
+				display: none;
+			}
+			> img {
+				float: right;
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.table {
+	margin-bottom: 30px;
+	@media (min-width: 576px) {
+		display: block !important;
+	}
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+
+	> table {
+		width: 100%;
+		margin-bottom: 1rem;
+		color: #212529;
+		border-collapse: collapse;
+		> thead {
+			> tr {
+				color: #3c4752;
+				background-color: rgb(224, 235, 255) !important;
+				> th {
+					vertical-align: bottom;
+					border-bottom: 2px solid #dee2e6;
+					padding: 0.75rem;
+					vertical-align: top;
+					border-top: 1px solid #dee2e6;
+				}
+			}
+		}
+	}
+}

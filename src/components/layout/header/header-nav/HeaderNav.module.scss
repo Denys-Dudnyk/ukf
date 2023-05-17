@@ -1,0 +1,84 @@
+.yazyky {
+	@media (max-width: 768px) {
+		display: grid;
+		grid-template-columns: repeat(2, 35px);
+	}
+	> li {
+		font-family: Helvetica;
+		list-style: none;
+		line-height: 1.5;
+		float: left;
+		margin-right: 15px;
+		> a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			letter-spacing: 1px;
+			font-size: 85%;
+		}
+	}
+}
+
+.nav {
+	width: 550px;
+	padding: 0px;
+	@media (max-width: 540px) {
+		> li {
+			@apply hidden;
+		}
+		> button {
+			@apply hidden;
+		}
+	}
+	@media (max-width: 950px) {
+		> li {
+			@apply hidden;
+		}
+	}
+
+	&.verticalNav {
+		@apply block flex flex-col gap-16;
+		> li {
+			@apply block;
+		}
+		> button {
+			@apply block;
+		}
+	}
+}
+
+.link {
+	font-family: Helvetica;
+
+	line-height: 1.5;
+	font-family: Helvetica;
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	&:first-child {
+		border-bottom: 2px solid white;
+	}
+
+	@media (max-width: 768px) {
+		display: none;
+	}
+
+	> a {
+		letter-spacing: 1px;
+		font-size: 90%;
+
+		@apply text-white  font-bold  transition-colors  hidden md:block;
+	}
+}
+
+.verticalLink {
+	@apply transition-all;
+	background-size: 100% 200%;
+	background-image: linear-gradient(to top, #f3f3f3 50%, #fff 50%);
+	&:hover {
+		background-position: 0 100%;
+	}
+	> a {
+		@apply text-gray-600 text-3xl transition-colors hover:text-black;
+	}
+}

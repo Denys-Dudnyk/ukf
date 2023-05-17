@@ -1,0 +1,54 @@
+.versia {
+	@media (max-width: 768px) {
+		@apply items-end   fixed bottom-0  left-0 w-full mx-auto;
+
+		// height: 160px;
+	}
+
+	.versiaContainer {
+		font-family: Helvetica;
+		font-size: 75%;
+		color: #666666;
+		letter-spacing: 1px;
+		text-align: left;
+		margin-left: 50px;
+		font-weight: bold;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	.copyright {
+		background-color: #002f68;
+		text-align: center;
+		font-family: Helvetica;
+		font-size: 11px;
+		color: #ffffff;
+		position: relative;
+		letter-spacing: 2px;
+		height: 30px;
+		font-weight: bold;
+		padding-top: 12px;
+		padding-bottom: 1.5rem;
+
+		> span {
+			@media (max-width: 768px) {
+				display: none;
+			}
+		}
+	}
+
+	.somshak {
+		text-align: center;
+		font-family: Helvetica;
+		font-size: 11px;
+		color: #666666;
+		letter-spacing: 2px;
+		font-weight: bold;
+		background-color: #00cdff;
+		height: 42px;
+		padding-top: 10px;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+}

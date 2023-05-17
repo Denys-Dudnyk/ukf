@@ -1,0 +1,55 @@
+.rozvrh {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	@media (max-width: 1200px) {
+		max-width: 1140px;
+	}
+	@media (max-width: 992px) {
+		max-width: 960px;
+	}
+	.rozvrhContainer {
+		margin-top: 100px;
+
+		.title {
+			display: flex !important;
+			flex-direction: row !important;
+			justify-content: center !important;
+			margin-bottom: 1rem !important;
+			.titleCon {
+				padding: 0.5rem !important;
+				.user {
+					display: flex;
+					justify-content: center;
+					font-size: 150%;
+					font-weight: bold;
+					color: rgb(60, 60, 60);
+				}
+
+				.form_field {
+					text-align: center;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: 0;
+					// max-width: 66.666667%;
+				}
+			}
+		}
+
+		.radioButtons {
+			display: flex !important;
+			flex-direction: row !important;
+			justify-content: center !important;
+			margin-bottom: 1rem !important;
+		}
+
+		.checkbox {
+			display: flex !important;
+			flex-direction: row !important;
+			justify-content: center !important;
+			margin-bottom: 1rem !important;
+		}
+	}
+}

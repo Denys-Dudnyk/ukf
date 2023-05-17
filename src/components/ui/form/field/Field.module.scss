@@ -1,0 +1,53 @@
+.field {
+	// @apply relative border border-black transition-colors focus-within:border-violet text-left py-2 mt-5;
+	// @apply focus-within:border-violet;
+	// font-family: Helvetica;
+	font-size: 80%;
+	margin: 2px;
+	@apply flex;
+	@media (max-width: 768px) {
+		display: grid;
+		// gap: 100px;
+		grid-template-columns: repeat(1, 360px);
+		// justify-content: center;
+	}
+
+	// &.errorField {
+	// 	@apply border-[#ff0000];
+	// }
+	> span {
+		font-size: 95%;
+		@apply text-left  py-1;
+		width: 63px;
+		@media (max-width: 768px) {
+			font-size: 16px;
+			@apply mb-2;
+		}
+		// padding: 4px 2px;
+	}
+	> label {
+		> input {
+			// @apply outline-none border-none focus:ring-0  w-full m-0 px-0;
+			// @apply border;
+			@apply border rounded-sm mb-1 border-gray-500;
+
+			width: 105px;
+			height: 25.19px;
+			padding: 0.375rem 0.75rem;
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+				height: calc(1.5em + 0.75rem + 2px);
+				@apply mb-4;
+				border: 1px solid #ced4da;
+				border-radius: 0.25rem;
+				line-height: 1.5;
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+// .error {
+// 	@apply absolute -bottom-6 left-0 text-sm w-full;
+// 	color: #ff0000;
+// }

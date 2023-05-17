@@ -1,0 +1,7 @@
+.layout {
+	@apply h-screen;
+
+	.main {
+		@apply w-full h-full snap-y scroll-smooth;
+	}
+}
